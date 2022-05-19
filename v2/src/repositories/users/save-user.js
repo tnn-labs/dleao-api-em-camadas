@@ -1,6 +1,6 @@
 let users = [];
 
-const saveUserRepository = (user) => {
+const saveUser = (user) => {
   const id = Math.random().toString();
   const userWithId = {
     ...user,
@@ -11,4 +11,4 @@ const saveUserRepository = (user) => {
   return userWithId;
 };
 
-module.exports = { saveUserRepository };
+module.exports = { saveUser };
